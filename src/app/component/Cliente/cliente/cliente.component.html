@@ -1,0 +1,54 @@
+<div class="container">
+ <h1 >Soy un cliente</h1>
+ <button class="btn btn-primary" [routerLink]="['/formulario_cliente']">Crear</button>
+
+
+ <!--  nombre:String;
+ apellido:String;  
+ tipo_documento:String;
+ documento:String;
+ direccion:String;
+ codigo_postal:String;
+ numero_telefono1:String;
+ numero_telefono2:String;
+ correo_electronico:String;
+ genero:String;
+ fecha_nacimiento:Date = new Date();
+ nivel_estudio:String;
+ licencia_conduccion:String;
+ fecha_vencimiento_licencia:Date = new Date();
+ contrasena:String; -->
+<table class="table table-bordered table-striped ">
+ <thead>
+     <tr>
+         <th>ID</th>
+         <th>Nombre</th>
+         <th>Apellido</th>
+         <th>N°-Documento</th>
+         <th>Direccion-</th>
+         <th>Telefono</th>
+         <th>Correo</th>
+         <th>N°-Licencia</th>
+         <th>Fech-ExpLicencia</th>
+         <th>Editar</th>
+     </tr>
+ </thead>
+ <tbody>
+  <tr *ngFor="let clientes of cliente">
+      <td>{{clientes.id}}</td>
+      <td>{{clientes.nombre}}</td>
+      <td>{{clientes.apellido}}</td>
+      <td>{{clientes. numero_telefono1}}</td>
+      <td>{{clientes.direccion}}</td>      
+      <td>{{clientes.documento}}</td>
+      <td>{{clientes.correo}}</td>
+      <td>{{clientes.licencia_conduccion}}</td>
+      <td>{{clientes.fecha_vencimiento_licencia}}</td>
+      <td type="button" name="button" [routerLink]="['/formulario_cliente',clientes.id]" class="btn btn-primary">Editar</td>
+  </tr>
+
+ </tbody>
+
+</table>
+
+</div>

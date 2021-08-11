@@ -1,0 +1,90 @@
+<div class="container">
+    <form  (ngSubmit)="create()" >
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="nombre" class="nombre">Nombre</label>
+                <input type="text " class="form-control" [(ngModel)]="cliente.nombre" name="nombre">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="apellido" class="apellido">Apellido</label>
+                <input type="text " class="form-control" [(ngModel)]="cliente.apellido" name="apellido">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="tipo_documento" class="tipo_documento">Tipo Documento</label>
+                <input type="text " class="form-control" [(ngModel)]="cliente.tipo_documento" name="tipo_documento">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="documento" class="documento">Documento</label>
+                <input type="text " class="form-control" [(ngModel)]="cliente.documento" name="documento">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="direccion" class="direccion">Direccion</label>
+                <input type="text" class="form-control" [(ngModel)]="cliente.direccion" name="direccion">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="codigo_postal" class="codigo_postal">Codigo Postal</label>
+                <input type="text " class="form-control" [(ngModel)]="cliente.codigo_postal" name="codigo_postal">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="telefono1" class="telefono1">Telefono1</label>
+                <input type="text " class="form-control" [(ngModel)]="cliente.numero_telefono1" name="numero_telefono1">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="numero_telefono2" class="telefono2">Telefono2</label>
+                <input type="text " class="form-control" [(ngModel)]="cliente.numero_telefono2" name="numero_telefono2">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="correo_electronico" class="correo_electronico">Correo</label>
+                <input type="email " class="form-control" [(ngModel)]="cliente.correo_electronico" name="correo_electronico">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="genero" class="genero">Genero</label>
+                <input type="text " class="form-control" [(ngModel)]="cliente.genero" name="genero">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="fecha_nacimiento" class="fecha_nacimiento">Fecha Nacimiento</label>
+                <input type="date " class="form-control" [(ngModel)]="cliente.fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="nivel_estudio" class="nivel_estudio">Nivel Estudio</label>
+                <input type="text " class="form-control" [(ngModel)]="cliente.nivel_estudio" name="nivel_estudio">
+            </div>
+        </div>
+
+        <div class="row">
+           
+            <div class="form-group col-md-4">
+                <label for="licencia_conduccion" class="licencia_conduccion">Licencia</label>
+                <input type="text " class="form-control" [(ngModel)]="cliente.licencia_conduccion" name="licencia_conduccion" >
+            </div>           
+            <div class="form-group col-md-4">
+                <label for=" fecha_vencimiento_licencia
+                " class=" fecha_vencimiento_licencia
+                ">Fecha Vencimiento</label>
+                <input type="date "class="form-control" [(ngModel)]=" cliente.fecha_vencimiento_licencia
+                " name="fecha_vencimiento_licencia
+                ">
+            </div>
+             <div class="form-group col-md-4">
+                <label for="contrasena" class="contrasena">Contraseña</label>
+                <input type="text " class="form-control" [(ngModel)]="cliente.contrasena" name="contrasena">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button tclass="btn btn-primary" role="button">Submit</button>
+        </div>
+
+        
+
+    </form>
+</div>
